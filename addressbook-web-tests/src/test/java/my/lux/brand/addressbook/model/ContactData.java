@@ -1,4 +1,4 @@
-package my.lux.brand.addressbook;
+package my.lux.brand.addressbook.model;
 
 public class ContactData {
    private final String firstname;

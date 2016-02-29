@@ -1,4 +1,4 @@
-package my.lux.brand.addressbook;
+package my.lux.brand.addressbook.model;
 
 public class GroupData {
    private final String name;
