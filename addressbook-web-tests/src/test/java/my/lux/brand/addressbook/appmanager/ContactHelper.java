@@ -26,4 +26,13 @@ public class ContactHelper extends HelperBase {
       type(By.name("company"),contactData.getCompany());
       type(By.name("home"),contactData.getHomephone());
    }
+
+   public void deleteSelectedContact() {
+      click(By.cssSelector("input[value='Delete']"));
+      acceptAlert();
+   }
+
+   public void selectContact() {
+      click(By.name("selected[]"));
+   }
 }

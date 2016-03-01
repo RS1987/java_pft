@@ -32,4 +32,15 @@ public class HelperBase {
          return false;
       }
    }
+
+   public boolean acceptAlert () {
+
+      try {
+         wd.switchTo().alert().accept();
+         return true;
+      }
+      catch (NoAlertPresentException e) {
+         return false;
+      }
+   }
 }
