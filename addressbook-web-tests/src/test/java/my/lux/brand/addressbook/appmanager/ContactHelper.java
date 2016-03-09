@@ -16,6 +16,10 @@ public class ContactHelper extends HelperBase {
       super(wd);
    }
 
+   public void initContactCreation() {
+      click(By.linkText("add new"));
+   }
+
    public void initContactModification() {
       click(By.cssSelector("img[alt='Edit']"));
    }
@@ -51,5 +55,20 @@ public class ContactHelper extends HelperBase {
    public void deleteSelectedContact() {
       click(By.cssSelector("input[value='Delete']"));
       acceptAlert();
+   }
+
+   public void returnToHomePage() {
+      click(By.linkText("home"));
+   }
+
+   public void createContact(ContactData contact) {
+      initContactCreation();
+      fillContactForm(contact, true);
+      submitContactCreation();
+      returnToHomePage();
+   }
+
+   public boolean isThereAContact() {
+      return isElementPresent(By.name("selected[]"));
    }
 }

@@ -1,5 +1,6 @@
 package my.lux.brand.addressbook.tests;
 
+import my.lux.brand.addressbook.model.ContactData;
 import org.testng.annotations.Test;
 
 /**
@@ -11,9 +12,12 @@ public class ContactDeletionTests extends TestBase{
    public void testContactDeletion() {
 
       app.getNavigationHelper().gotoHomePage();
+      if (! app.getContactHelper().isThereAContact()) {
+         app.getContactHelper().createContact(new ContactData("A", "J", "Fisher", "Scout", "P avenue 134/98", "MorningStar", "+380887776566", "newGroup"));
+      }
       app.getContactHelper().selectContact();
       app.getContactHelper().deleteSelectedContact();
-      app.getNavigationHelper().gotoHomePage();
+      app.getContactHelper().returnToHomePage();
    }
 
 }

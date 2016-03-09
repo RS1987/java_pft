@@ -1,5 +1,6 @@
 package my.lux.brand.addressbook.tests;
 
+import my.lux.brand.addressbook.model.GroupData;
 import org.testng.annotations.Test;
 
 public class GroupDeletionTests extends TestBase{
@@ -8,6 +9,9 @@ public class GroupDeletionTests extends TestBase{
     public void testGroupDeletion() {
 
         app.getNavigationHelper().gotoGroupPage();
+        if (! app.getGroupHelper().isThereAGroup()) {
+            app.getGroupHelper().createGroup(new GroupData("newGroup", "newHeader", "newFooter"));
+        }
         app.getGroupHelper().selectGroup();
         app.getGroupHelper().deleteSelectedGroups();
         app.getGroupHelper().returnToGroupPage();
