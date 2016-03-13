@@ -86,7 +86,11 @@ public class ContactHelper extends HelperBase {
       List<WebElement> elements = wd.findElements(By.cssSelector("tr[name='entry']"));
       for (WebElement element : elements) {
          String name = element.findElement(By.cssSelector("td:nth-child(3)")).getText();
-         ContactData contact = new ContactData(name, null, null, null, null, null, null, null);
+         String id = element.findElement(By.cssSelector("td:nth-child(1) > input")).getAttribute("value");
+         String surname = element.findElement(By.cssSelector("td:nth-child(2)")).getText();
+         String address = element.findElement(By.cssSelector("td:nth-child(4)")).getText();
+         String phone = element.findElement(By.cssSelector("td:nth-child(6)")).getText();
+         ContactData contact = new ContactData(id, name, null, surname, null, address, null, phone, null);
          contacts.add(contact);
       }
       return contacts;
