@@ -16,7 +16,15 @@ public class ContactDeletionTests extends TestBase{
    public void ensurePreconditions(){
       app.goTo().homePage();
       if (app.contact().list().size() == 0) {
-         app.contact().create(new ContactData("A", "J", "Fisher", "Scout", "P avenue 134/98", "MorningStar", "+380887776566", "newGroup"));
+         app.contact().create(new ContactData()
+                 .withFirstname("A")
+                 .withMiddlename("J")
+                 .withLastname("Fisher")
+                 .withNickname("Scout")
+                 .withAddress("P avenue 134/98")
+                 .withCompany("MorningStar")
+                 .withHomephone("+380887776566")
+                 .withGroup("newGroup"));
       }
    }
 
