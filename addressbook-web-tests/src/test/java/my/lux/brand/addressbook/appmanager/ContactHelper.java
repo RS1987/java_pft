@@ -91,8 +91,13 @@ public class ContactHelper extends HelperBase {
       return wd.findElements(By.name("selected[]")).size();
    }
 
+   private Contacts contactCache = null;
+
    public Contacts all() {
-      Contacts contacts = new Contacts();
+      if(contactCache != null){
+         return new Contacts(contactCache);
+      }
+      contactCache = new Contacts();
       List<WebElement> elements = wd.findElements(By.cssSelector("tr[name='entry']"));
       for (WebElement element : elements) {
          String name = element.findElement(By.cssSelector("td:nth-child(3)")).getText();
@@ -106,8 +111,8 @@ public class ContactHelper extends HelperBase {
                  .withLastname(surname)
                  .withAddress(address)
                  .withHomephone(phone);
-         contacts.add(contact);
+         contactCache.add(contact);
       }
-      return contacts;
+      return new Contacts(contactCache);
    }
 }
