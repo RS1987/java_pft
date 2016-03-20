@@ -21,10 +21,10 @@ public class ContactCreationTests extends TestBase {
                 .withNickname("Scout")
                 .withAddress("P avenue 134/98")
                 .withCompany("MorningStar")
-                .withHomephone("+380887776566")
+                .withHomePhone("+380887776566")
                 .withGroup("newGroup");
         app.contact().create(contact);
-        assertThat(app.group().count(), equalTo(before.size() + 1));
+        assertThat(app.contact().count(), equalTo(before.size() + 1));
         Contacts after = app.contact().all();
         assertThat(after, equalTo(before.withNewContact(
                 contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));

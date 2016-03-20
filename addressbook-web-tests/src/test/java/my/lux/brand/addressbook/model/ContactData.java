@@ -9,6 +9,8 @@ public class ContactData {
    private String address;
    private String company;
    private String homephone;
+   private String mobilephone;
+   private String workphone;
    private String group;
 
    public int getId() {
@@ -39,8 +41,16 @@ public class ContactData {
       return company;
    }
 
-   public String getHomephone() {
+   public String getHomePhone() {
       return homephone;
+   }
+
+   public String getMobilePhone() {
+      return mobilephone;
+   }
+
+   public String getWorkPhone() {
+      return workphone;
    }
 
    public String getGroup() {
@@ -82,8 +92,18 @@ public class ContactData {
       return this;
    }
 
-   public ContactData withHomephone(String homephone) {
+   public ContactData withHomePhone(String homephone) {
       this.homephone = homephone;
+      return this;
+   }
+
+   public ContactData withMobilePhone(String mobilephone) {
+      this.homephone = mobilephone;
+      return this;
+   }
+
+   public ContactData withWorkPhone(String workphone) {
+      this.homephone = workphone;
       return this;
    }
 

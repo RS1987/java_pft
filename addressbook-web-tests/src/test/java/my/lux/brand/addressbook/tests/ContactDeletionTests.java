@@ -2,11 +2,8 @@ package my.lux.brand.addressbook.tests;
 
 import my.lux.brand.addressbook.model.ContactData;
 import my.lux.brand.addressbook.model.Contacts;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.util.Set;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -27,7 +24,7 @@ public class ContactDeletionTests extends TestBase{
                  .withNickname("Scout")
                  .withAddress("P avenue 134/98")
                  .withCompany("MorningStar")
-                 .withHomephone("+380887776566")
+                 .withHomePhone("+380887776566")
                  .withGroup("newGroup"));
       }
    }
@@ -38,7 +35,7 @@ public class ContactDeletionTests extends TestBase{
       Contacts before = app.contact().all();
       ContactData deletedContact = before.iterator().next();
       app.contact().delete(deletedContact);
-      assertThat(app.group().count(), equalTo(before.size() - 1));
+      assertThat(app.contact().count(), equalTo(before.size() - 1));
       Contacts after = app.contact().all();
       assertThat(after, equalTo(before.withoutNewContact(deletedContact)));
    }

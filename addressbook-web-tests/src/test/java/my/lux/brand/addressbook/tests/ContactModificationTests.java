@@ -2,13 +2,8 @@ package my.lux.brand.addressbook.tests;
 
 import my.lux.brand.addressbook.model.ContactData;
 import my.lux.brand.addressbook.model.Contacts;
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.MatcherAssert;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.util.Set;
 
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.junit.MatcherAssert.assertThat;
@@ -29,7 +24,7 @@ public class ContactModificationTests extends TestBase {
                  .withNickname("Scout")
                  .withAddress("P avenue 134/98")
                  .withCompany("MorningStar")
-                 .withHomephone("+380887776566")
+                 .withHomePhone("+380887776566")
                  .withGroup("newGroup"));
       }
    }
@@ -47,9 +42,9 @@ public class ContactModificationTests extends TestBase {
               .withNickname("SS")
               .withAddress("Pumb avenue 134/98")
               .withCompany("MorningStar")
-              .withHomephone("+380887776566");
+              .withHomePhone("+380887776566");
       app.contact().modify(contact);
-      assertThat(app.group().count(), equalTo(before.size()));
+      assertThat(app.contact().count(), equalTo(before.size()));
       Contacts after = app.contact().all();
       assertThat(after, equalTo(before.withModifiedContact(modifiedContact)));
    }
