@@ -2,6 +2,8 @@ package my.lux.brand.addressbook.tests;
 
 import my.lux.brand.addressbook.model.ContactData;
 import my.lux.brand.addressbook.model.Contacts;
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.MatcherAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -47,8 +49,8 @@ public class ContactModificationTests extends TestBase {
               .withCompany("MorningStar")
               .withHomephone("+380887776566");
       app.contact().modify(contact);
+      assertThat(app.group().count(), equalTo(before.size()));
       Contacts after = app.contact().all();
-      assertThat(after.size(), equalTo(before.size()));
       assertThat(after, equalTo(before.withModifiedContact(modifiedContact)));
    }
 }

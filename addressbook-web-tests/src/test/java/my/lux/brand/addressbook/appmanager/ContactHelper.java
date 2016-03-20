@@ -70,6 +70,7 @@ public class ContactHelper extends HelperBase {
       initContactCreation();
       fillContactForm(contact, true);
       submitContactCreation();
+      contactCache = null;
       returnToHomePage();
    }
 
@@ -78,16 +79,18 @@ public class ContactHelper extends HelperBase {
       initContactModification();
       fillContactForm(contact, false);
       submitContactModification();
+      contactCache = null;
       returnToHomePage();
    }
 
    public void delete(ContactData contact) {
       selectContactById(contact.getId());
       deleteSelectedContact();
+      contactCache = null;
       returnToHomePage();
    }
 
-   public int getContactCount() {
+   public int count() {
       return wd.findElements(By.name("selected[]")).size();
    }
 

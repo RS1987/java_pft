@@ -24,10 +24,8 @@ public class ContactCreationTests extends TestBase {
                 .withHomephone("+380887776566")
                 .withGroup("newGroup");
         app.contact().create(contact);
+        assertThat(app.group().count(), equalTo(before.size() + 1));
         Contacts after = app.contact().all();
-        assertThat(after.size(), equalTo(before.size() + 1));
-
-        before.add(contact);
         assertThat(after, equalTo(before.withNewContact(
                 contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
     }
