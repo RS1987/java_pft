@@ -91,6 +91,9 @@ public class ContactHelper extends HelperBase {
       initContactModificationById(contact.getId());
       String firstname = wd.findElement(By.name("firstname")).getAttribute("value");
       String lastname = wd.findElement(By.name("lastname")).getAttribute("value");
+      String email = wd.findElement(By.name("email")).getAttribute("value");
+      String email2 = wd.findElement(By.name("email2")).getAttribute("value");
+      String email3 = wd.findElement(By.name("email3")).getAttribute("value");
       String home = wd.findElement(By.name("home")).getAttribute("value");
       String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
       String work = wd.findElement(By.name("work")).getAttribute("value");
@@ -99,6 +102,9 @@ public class ContactHelper extends HelperBase {
               .withId(contact.getId())
               .withFirstname(firstname)
               .withLastname(lastname)
+              .withEmail(email)
+              .withEmail2(email2)
+              .withEmail3(email3)
               .withHomePhone(home)
               .withMobilePhone(mobile)
               .withWorkPhone(work);
@@ -128,18 +134,15 @@ public class ContactHelper extends HelperBase {
          int id = Integer.parseInt(element.findElement(By.cssSelector("td:nth-child(1) > input")).getAttribute("value"));
          String surname = element.findElement(By.cssSelector("td:nth-child(2)")).getText();
          String address = element.findElement(By.cssSelector("td:nth-child(4)")).getText();
-         String[] phones = element.findElement(By.cssSelector("td:nth-child(6)")).getText().split("\n");
-         String homephone = phones[0];
-         String mobilephone = phones[1];
-         String workphone = phones[2];
+         String allEmails = element.findElement(By.cssSelector("td:nth-child(5)")).getText();
+         String allPhones = element.findElement(By.cssSelector("td:nth-child(6)")).getText();
          ContactData contact = new ContactData()
                  .withId(id)
                  .withFirstname(name)
                  .withLastname(surname)
                  .withAddress(address)
-                 .withHomePhone(homephone)
-                 .withMobilePhone(mobilephone)
-                 .withWorkPhone(workphone);
+                 .withAllEmails(allEmails)
+                 .withAllPhones(allPhones);
 
          contactCache.add(contact);
       }

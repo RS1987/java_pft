@@ -8,6 +8,11 @@ public class ContactData {
    private String nickname;
    private String address;
    private String company;
+   private String allEmails;
+   private String email;
+   private String email2;
+   private String email3;
+   private String allPhones;
    private String homephone;
    private String mobilephone;
    private String workphone;
@@ -39,6 +44,26 @@ public class ContactData {
 
    public String getCompany() {
       return company;
+   }
+
+   public String getAllEmails() {
+      return allEmails;
+   }
+
+   public String getEmail() {
+      return email;
+   }
+
+   public String getEmail2() {
+      return email2;
+   }
+
+   public String getEmail3() {
+      return email3;
+   }
+
+   public String getAllPhones() {
+      return allPhones;
    }
 
    public String getHomePhone() {
@@ -92,18 +117,43 @@ public class ContactData {
       return this;
    }
 
+   public ContactData withAllEmails(String allEmails) {
+      this.allEmails = allEmails;
+      return this;
+   }
+
+   public ContactData withEmail(String email) {
+      this.email = email;
+      return this;
+   }
+
+   public ContactData withEmail2(String email2) {
+      this.email2 = email2;
+      return this;
+   }
+
+   public ContactData withEmail3(String email3) {
+      this.email3 = email3;
+      return this;
+   }
+
+   public ContactData withAllPhones(String allPhones) {
+      this.allPhones = allPhones;
+      return this;
+   }
+
    public ContactData withHomePhone(String homephone) {
       this.homephone = homephone;
       return this;
    }
 
    public ContactData withMobilePhone(String mobilephone) {
-      this.homephone = mobilephone;
+      this.mobilephone = mobilephone;
       return this;
    }
 
    public ContactData withWorkPhone(String workphone) {
-      this.homephone = workphone;
+      this.workphone = workphone;
       return this;
    }
 
@@ -117,6 +167,7 @@ public class ContactData {
       return "ContactData{" +
               "firstname='" + firstname + '\'' +
               ", lastname='" + lastname + '\'' +
+              ", address='" + address + '\'' +
               '}';
    }
 
@@ -129,7 +180,8 @@ public class ContactData {
 
       if (id != that.id) return false;
       if (firstname != null ? !firstname.equals(that.firstname) : that.firstname != null) return false;
-      return lastname != null ? lastname.equals(that.lastname) : that.lastname == null;
+      if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) return false;
+      return address != null ? address.equals(that.address) : that.address == null;
 
    }
 
@@ -138,6 +190,7 @@ public class ContactData {
       int result = id;
       result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
       result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
+      result = 31 * result + (address != null ? address.hashCode() : 0);
       return result;
    }
 }
