@@ -23,10 +23,10 @@ public class ContactViewInfoTests extends TestBase {
                  .withNickname("Scout")
                  .withAddress("P avenue 134/98")
                  .withCompany("MorningStar")
-                 .withEmail2("buggi@wuggi")
+                 .withEmail("buggi@wuggi")
                  .withHomePhone("+380887776566")
-                 .withGroup("newGroup"));
-      }
+                 .withWorkPhone("77 77 77")
+         );}
    }
 
    @Test

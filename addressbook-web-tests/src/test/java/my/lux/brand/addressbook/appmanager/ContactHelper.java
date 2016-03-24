@@ -132,19 +132,23 @@ public class ContactHelper extends HelperBase {
    public ContactData infoFromViewForm(ContactData contact) {
 
       openContactInfo(contact.getId());
-      String [] name = wd.findElement(By. cssSelector("#content > b")).getText().split(" ");
+      String [] name = wd.findElement(By.cssSelector("#content > b")).getText().split(" ");
       String [] additionalInfo = wd.findElement(By.id("content")).getText().split("\n");
+      String homephone = additionalInfo[5].replaceAll("[A-Z,:]", "").replaceAll(" ", "");
+      String workphone = additionalInfo[6].replaceAll("[A-Z,:]", "").replaceAll("^\\s", "");
+      String [] mail = additionalInfo[8].split(" ");
       returnToHomePage();
       return new ContactData()
               .withId(contact.getId())
               .withFirstname(name[0])
               .withMiddlename(name[1])
               .withLastname(name[2])
-              .withNickname(additionalInfo[0])
-              .withCompany(additionalInfo[1])
-              .withEmail(additionalInfo[2])
-              .withHomePhone(additionalInfo[3])
-              .withWorkPhone(additionalInfo[4]);
+              .withNickname(additionalInfo[1])
+              .withCompany(additionalInfo[2])
+              .withAddress(additionalInfo[3])
+              .withEmail(mail[0])
+              .withHomePhone(homephone)
+              .withWorkPhone(workphone);
    }
 
    public ContactData infoFromEditForm(ContactData contact) {
@@ -155,6 +159,7 @@ public class ContactHelper extends HelperBase {
       String lastname = wd.findElement(By.name("lastname")).getAttribute("value");
       String nickname = wd.findElement(By.name("nickname")).getAttribute("value");
       String company = wd.findElement(By.name("company")).getAttribute("value");
+      String address = wd.findElement(By.name("address")).getAttribute("value");
       String email = wd.findElement(By.name("email")).getAttribute("value");
       String email2 = wd.findElement(By.name("email2")).getAttribute("value");
       String email3 = wd.findElement(By.name("email3")).getAttribute("value");
@@ -169,6 +174,7 @@ public class ContactHelper extends HelperBase {
               .withLastname(lastname)
               .withNickname(nickname)
               .withCompany(company)
+              .withAddress(address)
               .withEmail(email)
               .withEmail2(email2)
               .withEmail3(email3)
