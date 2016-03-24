@@ -132,18 +132,19 @@ public class ContactHelper extends HelperBase {
    public ContactData infoFromViewForm(ContactData contact) {
 
       openContactInfo(contact.getId());
-      String fullname = wd.findElement(By. cssSelector("#content > b")).getText();
-      String additionalInfo = wd.findElement(By.id("content")).getText();
+      String [] name = wd.findElement(By. cssSelector("#content > b")).getText().split(" ");
+      String [] additionalInfo = wd.findElement(By.id("content")).getText().split("\n");
       returnToHomePage();
       return new ContactData()
               .withId(contact.getId())
-              /*.withFirstname(firstname)
-              .withMiddlename(middlename)
-              .withLastname(lastname)
-              .withNickname(nickname)
-              .withEmail(email)
-              .withHomePhone(home)
-              .withWorkPhone(work)*/;
+              .withFirstname(name[0])
+              .withMiddlename(name[1])
+              .withLastname(name[2])
+              .withNickname(additionalInfo[0])
+              .withCompany(additionalInfo[1])
+              .withEmail(additionalInfo[2])
+              .withHomePhone(additionalInfo[3])
+              .withWorkPhone(additionalInfo[4]);
    }
 
    public ContactData infoFromEditForm(ContactData contact) {
