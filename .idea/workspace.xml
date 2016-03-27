@@ -4,8 +4,6 @@
     <list default="true" id="fd4c3065-b4db-40a1-a8e2-2bd6cd240577" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ContactHelper.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ContactHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/model/ContactData.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/model/ContactData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/ContactViewInfoTests.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/ContactViewInfoTests.java" />
     </list>
     <ignored path="java_pft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ContactHelper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ContactHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ContactHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="846">
-              <caret line="167" column="73" selection-start-line="167" selection-start-column="73" selection-end-line="167" selection-end-column="73" />
+            <state relative-caret-position="287">
+              <caret line="142" column="37" selection-start-line="142" selection-start-column="37" selection-end-line="142" selection-end-column="37" />
               <folding>
                 <element signature="method#openContactInfo#0;class#ContactHelper#0" expanded="false" />
               </folding>
@@ -57,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactViewInfoTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ContactViewInfoTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/ContactViewInfoTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="362">
@@ -833,6 +831,7 @@
     <panes>
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -975,7 +974,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1431,15 +1429,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactViewInfoTests - 2016.03.24 at 23h 04m 01s.xml">
-      <configuration name="ContactViewInfoTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactViewInfoTests - 2016.03.24 at 23h 05m 40s.xml">
-      <configuration name="ContactViewInfoTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactViewInfoTests - 2016.03.24 at 23h 06m 32s.xml">
-      <configuration name="ContactViewInfoTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ContactViewInfoTests - 2016.03.24 at 23h 23m 07s.xml">
       <configuration name="ContactViewInfoTests" configurationId="TestNG" />
     </history-entry>
@@ -1461,10 +1450,19 @@
     <history-entry file="ContactViewInfoTests - 2016.03.24 at 23h 39m 12s.xml">
       <configuration name="ContactViewInfoTests" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ContactViewInfoTests - 2016.03.24 at 23h 55m 30s.xml">
+      <configuration name="ContactViewInfoTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactViewInfoTests - 2016.03.24 at 23h 56m 35s.xml">
+      <configuration name="ContactViewInfoTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactViewInfoTests - 2016.03.24 at 23h 56m 51s.xml">
+      <configuration name="ContactViewInfoTests" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1806,11 +1804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding>
-            <element signature="method#selectGroupById#0;class#GroupHelper#0" expanded="false" />
-            <element signature="e#1898#1899#0" expanded="false" />
-            <element signature="e#1963#1964#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1818,9 +1811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="21" column="47" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1888,9 +1878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1902,22 +1889,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ContactHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="142" column="37" selection-start-line="142" selection-start-column="37" selection-end-line="142" selection-end-column="37" />
+          <folding>
+            <element signature="method#openContactInfo#0;class#ContactHelper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/ContactViewInfoTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ContactHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="167" column="73" selection-start-line="167" selection-start-column="73" selection-end-line="167" selection-end-column="73" />
-          <folding>
-            <element signature="method#openContactInfo#0;class#ContactHelper#0" expanded="false" />
           </folding>
         </state>
       </provider>

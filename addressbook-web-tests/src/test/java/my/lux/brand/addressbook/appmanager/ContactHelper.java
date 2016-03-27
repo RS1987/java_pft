@@ -134,7 +134,7 @@ public class ContactHelper extends HelperBase {
       openContactInfo(contact.getId());
       String [] name = wd.findElement(By.cssSelector("#content > b")).getText().split(" ");
       String [] additionalInfo = wd.findElement(By.id("content")).getText().split("\n");
-      String homephone = additionalInfo[5].replaceAll("[A-Z,:]", "").replaceAll(" ", "");
+      String homephone = additionalInfo[5].replaceAll("[A-Z,:]", "").replaceAll("^\\s", "");
       String workphone = additionalInfo[6].replaceAll("[A-Z,:]", "").replaceAll("^\\s", "");
       String [] mail = additionalInfo[8].split(" ");
       returnToHomePage();
