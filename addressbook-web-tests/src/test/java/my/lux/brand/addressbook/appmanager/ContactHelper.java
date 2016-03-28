@@ -40,7 +40,11 @@ public class ContactHelper extends HelperBase {
       attach(By.name("photo"),contactData.getPhoto());
       type(By.name("address"),contactData.getAddress());
       type(By.name("company"),contactData.getCompany());
+      type(By.name("email2"),contactData.getEmail2());
+      type(By.name("email3"),contactData.getEmail3());
       type(By.name("home"),contactData.getHomePhone());
+      type(By.name("work"),contactData.getWorkPhone());
+      type(By.name("mobile"),contactData.getMobilePhone());
    }
 
    public void submitContactCreation() {

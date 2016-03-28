@@ -1,0 +1,33 @@
+[
+  {
+    "firstname": "Alex",
+    "middlename": "J.",
+    "lastname": "Fisher",
+    "nickname": "Scout",
+    "address": "P avenue 134/98",
+    "company": "MorningStar",
+    "homephone": "+380887776566"
+  },
+  {
+    "firstname": "A.",
+    "middlename": "J.",
+    "lastname": "Fisher",
+    "nickname": "Chemical",
+    "address": "Pravda avenue 134/98 1",
+    "company": "MorningStar 1",
+    "email2": "gogi@home.net",
+    "homephone": "+380456789032",
+    "workphone": "333 33 33"
+  },
+  {
+    "firstname": "Alexander",
+    "middlename": "Juriy",
+    "lastname": "Rybalko",
+    "nickname": "Scout",
+    "address": "Slobozhanskiy avenue 7/789",
+    "company": "MorningStar",
+    "email3": "doggi@barni.net",
+    "homephone": "+380231478360",
+    "mobilephone": "(076)234-96-21"
+  }
+]

@@ -1,5 +1,6 @@
 package my.lux.brand.addressbook.model;
 
+import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAliasType;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
@@ -10,20 +11,20 @@ import java.io.File;
 public class ContactData {
    @XStreamOmitField
    private int id = Integer.MAX_VALUE;
-   private String firstname;
-   private String middlename;
-   private String lastname;
-   private String nickname;
-   private String address;
-   private String company;
+   @Expose private String firstname;
+   @Expose private String middlename;
+   @Expose private String lastname;
+   @Expose private String nickname;
+   @Expose private String address;
+   @Expose private String company;
    private String allEmails;
    private String email;
-   private String email2;
-   private String email3;
+   @Expose private String email2;
+   @Expose private String email3;
    private String allPhones;
-   private String homephone;
-   private String mobilephone;
-   private String workphone;
+   @Expose private String homephone;
+   @Expose private String mobilephone;
+   @Expose private String workphone;
    private String group;
    private File photo;
 

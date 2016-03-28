@@ -1,0 +1,17 @@
+[
+  {
+    "name": "gName 0",
+    "header": "gHeader 0",
+    "footer": "gFooter 0"
+  },
+  {
+    "name": "gName 1",
+    "header": "gHeader 1",
+    "footer": "gFooter 1"
+  },
+  {
+    "name": "gName 2",
+    "header": "gHeader 2",
+    "footer": "gFooter 2"
+  }
+]
