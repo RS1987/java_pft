@@ -23,10 +23,6 @@ public class ContactHelper extends HelperBase {
       click(By.linkText("add new"));
    }
 
-   /*public void initContactModification() {
-      click(By.cssSelector("img[alt='Edit']"));
-   }*/
-
    public void initContactModificationById(int id) {
 
       wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']",id))).click();
@@ -36,7 +32,7 @@ public class ContactHelper extends HelperBase {
       wd.findElement(By.cssSelector(String.format("a[href='view.php?id=%s']",id))).click();
    }
 
-   public void fillContactForm(ContactData contactData, boolean creation) {
+   public void fillContactForm(ContactData contactData) {
       type(By.name("firstname"),contactData.getFirstname());
       type(By.name("middlename"),contactData.getMiddlename());
       type(By.name("lastname"),contactData.getLastname());
@@ -45,12 +41,6 @@ public class ContactHelper extends HelperBase {
       type(By.name("address"),contactData.getAddress());
       type(By.name("company"),contactData.getCompany());
       type(By.name("home"),contactData.getHomePhone());
-
-      if (creation) {
-         new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
-      } else {
-         Assert.assertFalse(isElementPresent(By.name("new_group")));
-      }
    }
 
    public void submitContactCreation() {
@@ -76,7 +66,7 @@ public class ContactHelper extends HelperBase {
 
    public void create(ContactData contact) {
       initContactCreation();
-      fillContactForm(contact, true);
+      fillContactForm(contact);
       submitContactCreation();
       contactCache = null;
       returnToHomePage();
@@ -85,7 +75,7 @@ public class ContactHelper extends HelperBase {
    public void modify(ContactData contact) {
       selectContactById(contact.getId());
       initContactModificationById(contact.getId());
-      fillContactForm(contact, false);
+      fillContactForm(contact);
       submitContactModification();
       contactCache = null;
       returnToHomePage();
