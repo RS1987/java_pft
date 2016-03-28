@@ -1,0 +1,29 @@
+<list>
+  <contact>
+    <firstname>Alex</firstname>
+    <middlename>J.</middlename>
+    <lastname>Fisher</lastname>
+    <nickname>Scout</nickname>
+    <address>P avenue 134/98</address>
+    <company>MorningStar</company>
+    <homephone>+380887776566</homephone>
+  </contact>
+  <contact>
+    <firstname>A.</firstname>
+    <middlename>J.</middlename>
+    <lastname>Fisher</lastname>
+    <nickname>Chemical</nickname>
+    <address>Pravda avenue 134/98</address>
+    <company>MorningStar</company>
+    <homephone>+380456789032</homephone>
+  </contact>
+  <contact>
+    <firstname>Alexander</firstname>
+    <middlename>Juriy</middlename>
+    <lastname>Rybalko</lastname>
+    <nickname>Scout</nickname>
+    <address>Slobozhanskiy avenue 7/789</address>
+    <company>MorningStar</company>
+    <homephone>+380231478360</homephone>
+  </contact>
+</list>

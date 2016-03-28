@@ -1,0 +1,17 @@
+<list>
+  <group>
+    <name>gName 0</name>
+    <header>gHeader 0</header>
+    <footer>gFooter 0</footer>
+  </group>
+  <group>
+    <name>gName 1</name>
+    <header>gHeader 1</header>
+    <footer>gFooter 1</footer>
+  </group>
+  <group>
+    <name>gName 2</name>
+    <header>gHeader 2</header>
+    <footer>gFooter 2</footer>
+  </group>
+</list>

@@ -1,7 +1,12 @@
 package my.lux.brand.addressbook.model;
 
-public class GroupData {
+import com.thoughtworks.xstream.annotations.XStreamAliasType;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
+@XStreamAliasType("group")
+
+public class GroupData {
+   @XStreamOmitField
    private int id = Integer.MAX_VALUE;
    private String name;
    private String header;

@@ -1,8 +1,14 @@
 package my.lux.brand.addressbook.model;
 
+import com.thoughtworks.xstream.annotations.XStreamAliasType;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
 import java.io.File;
 
+@XStreamAliasType("contact")
+
 public class ContactData {
+   @XStreamOmitField
    private int id = Integer.MAX_VALUE;
    private String firstname;
    private String middlename;
