@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd4c3065-b4db-40a1-a8e2-2bd6cd240577" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/generators/ContactDataGenerator.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/generators/ContactDataGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/generators/GroupDataGenerator.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/generators/GroupDataGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/ContactCreationTests.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/ContactCreationTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/GroupCreationTests.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/GroupCreationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ApplicationManager.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ApplicationManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/TestBase.java" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/TestBase.java" />
     </list>
     <ignored path="java_pft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,46 +48,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GroupDataGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/generators/GroupDataGenerator.java">
+      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+            <state relative-caret-position="770">
+              <caret line="57" column="108" selection-start-line="57" selection-start-column="108" selection-end-line="57" selection-end-column="108" />
               <folding>
-                <element signature="e#2422#2433#0" expanded="true" />
+                <element signature="e#2142#2143#0" expanded="true" />
+                <element signature="e#2175#2176#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GroupCreationTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/GroupCreationTests.java">
+      <file leaf-file-name="local.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="49" column="91" selection-start-line="49" selection-start-column="91" selection-end-line="49" selection-end-column="91" />
+            <state relative-caret-position="44">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactCreationTests.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/ContactCreationTests.java">
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+            <state relative-caret-position="242">
+              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContactDataGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/generators/ContactDataGenerator.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1408">
-              <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
-              <folding>
-                <element signature="e#2920#2933#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="814">
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -452,7 +453,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="1459197004127" />
+        <entry key="$PROJECT_DIR$/addressbook-web-tests" value="1459280127174" />
         <entry key="$PROJECT_DIR$/sandbox" value="1456663338683" />
       </map>
     </option>
@@ -756,10 +757,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sandbox/src/main/java/HelloBigWorld.java" />
-        <option value="$PROJECT_DIR$/sandbox/src/main/java/my/lux/brand/sandbox/Square.java" />
-        <option value="$PROJECT_DIR$/sandbox/src/main/java/my/lux/brand/sandbox/Rectangle.java" />
-        <option value="$PROJECT_DIR$/sandbox/src/main/java/my/lux/brand/sandbox/HelloBigWorld.java" />
         <option value="$PROJECT_DIR$/sandbox/src/main/java/my/lux/brand/sandbox/Point.java" />
         <option value="$PROJECT_DIR$/sandbox/src/main/java/my/lux/brand/sandbox/CalculateDistance.java" />
         <option value="$PROJECT_DIR$/sandbox/build.gradle" />
@@ -779,9 +776,7 @@
         <option value="$PROJECT_DIR$/sandbox/src/test/java/my/lux/brand/sandbox/PrimeTests.java" />
         <option value="$PROJECT_DIR$/sandbox/src/main/java/my/lux/brand/sandbox/Primes.java" />
         <option value="$PROJECT_DIR$/sandbox/src/main/java/my/lux/brand/sandbox/Collections.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/NavigationHelper.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/model/Groups.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/model/Contacts.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/GroupHelper.java" />
@@ -798,7 +793,6 @@
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/contacts.csv" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/groups.xml" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/contacts.xml" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/model/GroupData.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/model/ContactData.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/contacts.json" />
@@ -807,6 +801,13 @@
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/GroupCreationTests.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/generators/ContactDataGenerator.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/ContactCreationTests.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/TestBase.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" />
       </list>
     </option>
   </component>
@@ -882,6 +883,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -966,7 +971,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
+              <option name="myItemId" value="appmanager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1004,6 +1009,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="my.lux.brand.sandbox" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Git_Repository\java_pft\addressbook-web-tests\src\test\resources" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="my.lux.brand.addressbook.appmanager" />
@@ -1127,24 +1135,24 @@
       <module name="addressbook-web-tests_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="my.lux.brand.addressbook.tests" />
       <option name="MAIN_CLASS_NAME" value="my.lux.brand.addressbook.tests.ContactCreationTests" />
       <option name="METHOD_NAME" value="contactCreationTest" />
-      <option name="GROUP_NAME" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=firefox" />
+      <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/addressbook-web-tests" />
-      <option name="OUTPUT_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" value="" />
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+        <value defaultName="moduleWithDependencies" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <option name="PROPERTIES_FILE" value="" />
       <envs />
       <properties />
       <listeners />
@@ -1418,9 +1426,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactCreationTests - 2016.03.28 at 23h 16m 17s.xml">
-      <configuration name="ContactCreationTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ContactCreationTests - 2016.03.28 at 23h 21m 32s.xml">
       <configuration name="ContactCreationTests" configurationId="TestNG" />
     </history-entry>
@@ -1434,6 +1439,9 @@
       <configuration name="ContactCreationTests.contactCreationTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="ContactCreationTests_contactCreationTest - 2016.03.29 at 00h 17m 50s.xml">
+      <configuration name="ContactCreationTests.contactCreationTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactCreationTests_contactCreationTest - 2016.03.29 at 22h 48m 43s.xml">
       <configuration name="ContactCreationTests.contactCreationTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="GroupCreationTests - 2016.03.28 at 23h 03m 17s.xml">
@@ -1455,11 +1463,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1469,14 +1479,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32713348" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32713348" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822758" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1502,27 +1510,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/my/lux/brand/sandbox/Square.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/my/lux/brand/sandbox/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/my/lux/brand/sandbox/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/my/lux/brand/sandbox/HelloBigWorld.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1628,16 +1615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/NavigationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1697,13 +1674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/internal/TestMethodWorker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
@@ -1737,7 +1707,7 @@
         <state relative-caret-position="661">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1768,6 +1738,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1793,14 +1764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/model/GroupData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1822,6 +1785,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="26" column="28" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1850,23 +1814,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/generators/GroupDataGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
-          <folding>
-            <element signature="e#2422#2433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/generators/ContactDataGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1408">
           <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
           <folding>
-            <element signature="e#2920#2933#0" expanded="true" />
+            <element signature="e#2920#2933#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/ContactCreationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1878,10 +1840,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/ContactCreationTests.java">
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/generators/GroupDataGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="507">
+          <caret line="71" column="7" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+          <folding>
+            <element signature="e#2422#2433#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-contacts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/my/lux/brand/addressbook/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="57" column="108" selection-start-line="57" selection-start-column="108" selection-end-line="57" selection-end-column="108" />
+          <folding>
+            <element signature="e#2142#2143#0" expanded="true" />
+            <element signature="e#2175#2176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
