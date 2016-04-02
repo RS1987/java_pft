@@ -32,7 +32,7 @@ public class TestBase {
       app.stop();
    }
 
-   @BeforeMethod
+  /* @BeforeMethod
    public void logTestStart(Method m, Object[] p) {
       logger.info("Start test " + m.getName() + "with parameters " + Arrays.asList(p));
    }
@@ -40,6 +40,6 @@ public class TestBase {
    @AfterMethod(alwaysRun = true)
    public void logTestFinish(Method m) {
       logger.info("Finish test " + m.getName());
-   }
+   }*/
 
 }
