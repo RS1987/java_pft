@@ -3,9 +3,9 @@ package my.lux.brand.addressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAliasType;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.File;
 
 @XStreamAliasType("contact")
@@ -14,23 +14,78 @@ import java.io.File;
 
 public class ContactData {
    @XStreamOmitField
+   @Id
+   @Column(name = "id")
    private int id = Integer.MAX_VALUE;
-   @Expose private String firstname;
-   @Expose private String middlename;
-   @Expose private String lastname;
-   @Expose private String nickname;
-   @Expose private String address;
-   @Expose private String company;
-   private String allEmails;
+
+   @Expose
+   @Column(name = "firstname")
+   private String firstname;
+
+   @Expose
+   @Column(name = "middlename")
+   private String middlename;
+
+   @Expose
+   @Column(name = "lastname")
+   private String lastname;
+
+   @Expose
+   @Column(name = "nickname")
+   private String nickname;
+
+   @Expose
+   @Column(name = "address")
+   @Type(type = "text")
+   private String address;
+
+   @Expose
+   @Column(name = "company")
+   private String company;
+
+   @Expose
+   @Column(name = "email")
+   @Type(type = "text")
    private String email;
-   @Expose private String email2;
-   @Expose private String email3;
-   private String allPhones;
-   @Expose private String homephone;
-   @Expose private String mobilephone;
-   @Expose private String workphone;
+
+   @Expose
+   @Column(name = "email2")
+   @Type(type = "text")
+   private String email2;
+
+   @Expose
+   @Column(name = "email3")
+   @Type(type = "text")
+   private String email3;
+
+   @Expose
+   @Column(name = "home")
+   @Type(type = "text")
+   private String homephone;
+
+   @Expose
+   @Column(name = "mobile")
+   @Type(type = "text")
+   private String mobilephone;
+
+   @Expose
+   @Column(name = "work")
+   @Type(type = "text")
+   private String workphone;
+
+   @Transient
    private String group;
-   private File photo;
+
+   @Transient
+   private String allPhones;
+
+   @Transient
+   private String allEmails;
+
+   @Expose
+   @Column(name = "photo")
+   @Type(type = "text")
+   private String photo;
 
    public int getId() {
       return id;
@@ -97,7 +152,7 @@ public class ContactData {
    }
 
    public File getPhoto() {
-      return photo;
+      return new File(photo);
    }
 
    public ContactData withId(int id) {
@@ -181,7 +236,7 @@ public class ContactData {
    }
 
    public ContactData withPhoto(File photo) {
-      this.photo = photo;
+      this.photo = photo.getPath();
       return this;
    }
 
@@ -213,8 +268,18 @@ public class ContactData {
 
       if (id != that.id) return false;
       if (firstname != null ? !firstname.equals(that.firstname) : that.firstname != null) return false;
+      if (middlename != null ? !middlename.equals(that.middlename) : that.middlename != null) return false;
       if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) return false;
-      return address != null ? address.equals(that.address) : that.address == null;
+      if (nickname != null ? !nickname.equals(that.nickname) : that.nickname != null) return false;
+      if (address != null ? !address.equals(that.address) : that.address != null) return false;
+      if (company != null ? !company.equals(that.company) : that.company != null) return false;
+      if (email != null ? !email.equals(that.email) : that.email != null) return false;
+      if (email2 != null ? !email2.equals(that.email2) : that.email2 != null) return false;
+      if (email3 != null ? !email3.equals(that.email3) : that.email3 != null) return false;
+      if (homephone != null ? !homephone.equals(that.homephone) : that.homephone != null) return false;
+      if (mobilephone != null ? !mobilephone.equals(that.mobilephone) : that.mobilephone != null) return false;
+      if (workphone != null ? !workphone.equals(that.workphone) : that.workphone != null) return false;
+      return photo != null ? photo.equals(that.photo) : that.photo == null;
 
    }
 
@@ -222,8 +287,18 @@ public class ContactData {
    public int hashCode() {
       int result = id;
       result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
+      result = 31 * result + (middlename != null ? middlename.hashCode() : 0);
       result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
+      result = 31 * result + (nickname != null ? nickname.hashCode() : 0);
       result = 31 * result + (address != null ? address.hashCode() : 0);
+      result = 31 * result + (company != null ? company.hashCode() : 0);
+      result = 31 * result + (email != null ? email.hashCode() : 0);
+      result = 31 * result + (email2 != null ? email2.hashCode() : 0);
+      result = 31 * result + (email3 != null ? email3.hashCode() : 0);
+      result = 31 * result + (homephone != null ? homephone.hashCode() : 0);
+      result = 31 * result + (mobilephone != null ? mobilephone.hashCode() : 0);
+      result = 31 * result + (workphone != null ? workphone.hashCode() : 0);
+      result = 31 * result + (photo != null ? photo.hashCode() : 0);
       return result;
    }
 }
