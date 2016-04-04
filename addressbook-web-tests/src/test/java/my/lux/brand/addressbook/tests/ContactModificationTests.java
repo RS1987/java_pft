@@ -43,7 +43,7 @@ public class ContactModificationTests extends TestBase {
               .withAddress("Pumb avenue 134/98")
               .withCompany("MorningStar")
               .withHomePhone("+380887776566");
-      //app.goTo().homePage();
+      app.goTo().homePage();
       app.contact().modify(contact);
       assertThat(app.contact().count(), equalTo(before.size()));
       Contacts after = app.db().contacts();

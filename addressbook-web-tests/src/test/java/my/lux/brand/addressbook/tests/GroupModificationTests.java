@@ -24,8 +24,7 @@ public class GroupModificationTests extends TestBase {
                  .withName("group1")
                  .withHeader("header1")
                  .withFooter("footer1")
-         );
-      }
+         );}
    }
 
    @Test
