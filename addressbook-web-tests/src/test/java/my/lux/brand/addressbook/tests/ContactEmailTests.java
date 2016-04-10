@@ -27,8 +27,7 @@ public class ContactEmailTests extends TestBase{
                  .withAddress("P avenue 134/98")
                  .withCompany("MorningStar")
                  .withEmail2("buggi@wuggi")
-                 .withHomePhone("+380887776566")
-                 .withGroup("newGroup"));
+                 .withHomePhone("+380887776566"));
       }
    }
 

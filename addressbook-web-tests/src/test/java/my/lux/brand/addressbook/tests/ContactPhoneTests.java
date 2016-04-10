@@ -27,8 +27,7 @@ public class ContactPhoneTests extends TestBase {
                  .withAddress("P avenue 134/98")
                  .withCompany("MorningStar")
                  .withHomePhone("+380887776566")
-                 .withWorkPhone("33 33 33")
-                 .withGroup("newGroup"));
+                 .withWorkPhone("33 33 33"));
       }
    }
 

@@ -7,6 +7,8 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.File;
+import java.util.HashSet;
+import java.util.Set;
 
 @XStreamAliasType("contact")
 @Entity
@@ -74,9 +76,6 @@ public class ContactData {
    private String workphone;
 
    @Transient
-   private String group;
-
-   @Transient
    private String allPhones;
 
    @Transient
@@ -86,6 +85,11 @@ public class ContactData {
    @Column(name = "photo")
    @Type(type = "text")
    private String photo;
+
+   @ManyToMany
+   @JoinTable(name = "address_in_groups"
+           , joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+   private Set<GroupData> groups = new HashSet<GroupData>();
 
    public int getId() {
       return id;
@@ -147,12 +151,12 @@ public class ContactData {
       return workphone;
    }
 
-   public String getGroup() {
-      return group;
-   }
-
    public File getPhoto() {
       return new File(photo);
+   }
+
+   public Groups  getGroups() {
+      return new Groups(groups);
    }
 
    public ContactData withId(int id) {
@@ -230,13 +234,13 @@ public class ContactData {
       return this;
    }
 
-   public ContactData withGroup(String group) {
-      this.group = group;
+   public ContactData withPhoto(File photo) {
+      this.photo = photo.getPath();
       return this;
    }
 
-   public ContactData withPhoto(File photo) {
-      this.photo = photo.getPath();
+   public ContactData inGroup(GroupData group) {
+      groups.add(group);
       return this;
    }
 
@@ -268,9 +272,7 @@ public class ContactData {
 
       if (id != that.id) return false;
       if (firstname != null ? !firstname.equals(that.firstname) : that.firstname != null) return false;
-      if (middlename != null ? !middlename.equals(that.middlename) : that.middlename != null) return false;
       if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) return false;
-      if (nickname != null ? !nickname.equals(that.nickname) : that.nickname != null) return false;
       if (address != null ? !address.equals(that.address) : that.address != null) return false;
       if (company != null ? !company.equals(that.company) : that.company != null) return false;
       if (email != null ? !email.equals(that.email) : that.email != null) return false;
@@ -278,8 +280,7 @@ public class ContactData {
       if (email3 != null ? !email3.equals(that.email3) : that.email3 != null) return false;
       if (homephone != null ? !homephone.equals(that.homephone) : that.homephone != null) return false;
       if (mobilephone != null ? !mobilephone.equals(that.mobilephone) : that.mobilephone != null) return false;
-      if (workphone != null ? !workphone.equals(that.workphone) : that.workphone != null) return false;
-      return photo != null ? photo.equals(that.photo) : that.photo == null;
+      return workphone != null ? workphone.equals(that.workphone) : that.workphone == null;
 
    }
 
@@ -287,9 +288,7 @@ public class ContactData {
    public int hashCode() {
       int result = id;
       result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
-      result = 31 * result + (middlename != null ? middlename.hashCode() : 0);
       result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
-      result = 31 * result + (nickname != null ? nickname.hashCode() : 0);
       result = 31 * result + (address != null ? address.hashCode() : 0);
       result = 31 * result + (company != null ? company.hashCode() : 0);
       result = 31 * result + (email != null ? email.hashCode() : 0);
@@ -298,7 +297,6 @@ public class ContactData {
       result = 31 * result + (homephone != null ? homephone.hashCode() : 0);
       result = 31 * result + (mobilephone != null ? mobilephone.hashCode() : 0);
       result = 31 * result + (workphone != null ? workphone.hashCode() : 0);
-      result = 31 * result + (photo != null ? photo.hashCode() : 0);
       return result;
    }
 }

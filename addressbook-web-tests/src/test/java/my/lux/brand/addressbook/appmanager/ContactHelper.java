@@ -32,7 +32,7 @@ public class ContactHelper extends HelperBase {
       wd.findElement(By.cssSelector(String.format("a[href='view.php?id=%s']",id))).click();
    }
 
-   public void fillContactForm(ContactData contactData) {
+   public void fillContactForm(ContactData contactData, boolean creation) {
       type(By.name("firstname"),contactData.getFirstname());
       type(By.name("middlename"),contactData.getMiddlename());
       type(By.name("lastname"),contactData.getLastname());
@@ -45,6 +45,16 @@ public class ContactHelper extends HelperBase {
       type(By.name("home"),contactData.getHomePhone());
       type(By.name("work"),contactData.getWorkPhone());
       type(By.name("mobile"),contactData.getMobilePhone());
+
+      if(creation) {
+         if(contactData.getGroups().size() > 0) {
+            Assert.assertTrue(contactData.getGroups().size() == 1);
+            new Select(wd.findElement(By.name("new_group")))
+                    .selectByVisibleText(contactData.getGroups().iterator().next().getName());
+         } else {
+            Assert.assertFalse(isElementPresent(By.name("new_group")));
+         }
+      }
    }
 
    public void submitContactCreation() {
@@ -70,7 +80,7 @@ public class ContactHelper extends HelperBase {
 
    public void create(ContactData contact) {
       initContactCreation();
-      fillContactForm(contact);
+      fillContactForm(contact, true);
       submitContactCreation();
       contactCache = null;
       returnToHomePage();
@@ -79,7 +89,7 @@ public class ContactHelper extends HelperBase {
    public void modify(ContactData contact) {
       selectContactById(contact.getId());
       initContactModificationById(contact.getId());
-      fillContactForm(contact);
+      fillContactForm(contact, false);
       submitContactModification();
       contactCache = null;
       returnToHomePage();
