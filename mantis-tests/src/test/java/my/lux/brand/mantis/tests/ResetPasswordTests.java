@@ -1,7 +1,6 @@
 package my.lux.brand.mantis.tests;
 
 import my.lux.brand.mantis.model.MailMessage;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -14,9 +13,9 @@ import java.util.List;
 import static org.testng.Assert.assertTrue;
 
 /**
- * Created by Alex on 4/12/2016.
+ * Created by Alex on 4/18/2016.
  */
-public class RegistrationTests extends TestBase {
+public class ResetPasswordTests extends TestBase {
 
    @BeforeMethod
    public void startMailServer() {
@@ -24,16 +23,17 @@ public class RegistrationTests extends TestBase {
    }
 
    @Test
-   public void testRegistration() throws IOException, MessagingException {
+   public void testResettingPassword() throws IOException, MessagingException {
 
-      long now = System.currentTimeMillis();
-      String user = String.format("user%s", now);
+      String user = "scout";
       String password = "password";
-      String email = String.format("user%s@localhost.localdomain", now);
-      app.registration().start(user, email);
+      String email = "scout7@mail.ru";
+      app.reset().goToManageUsersPage(app.getProperty("web.adminLogin"), app.getProperty("web.adminPassword"));
+      app.reset().initResettingPassword(2);
+
       List<MailMessage> mailMessages = app.mail().waitForMail(2, 10000);
       String confirmationLink = findConfirmationLink(mailMessages, email);
-      app.registration().finish(confirmationLink, password);
+      app.reset().finishReset(confirmationLink, password);
 
       assertTrue(app.newSession().login(user, password));
 
@@ -45,7 +45,7 @@ public class RegistrationTests extends TestBase {
       return regex.getText(mailMessage.text);
    }
 
-   @AfterMethod (alwaysRun = true)
+   @AfterMethod(alwaysRun = true)
    public void stopMailServer() {
       app.mail().stop();
    }
