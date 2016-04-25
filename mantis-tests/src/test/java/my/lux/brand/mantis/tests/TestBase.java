@@ -6,6 +6,7 @@ import my.lux.brand.mantis.appmanager.ApplicationManager;
 import org.openqa.selenium.remote.BrowserType;
 import org.testng.SkipException;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
@@ -31,7 +32,12 @@ public class TestBase {
       //app.ftp().upload(new File("src/test/resources/config_inc.php"), "config_inc.php", "config_inc.php.bak");
    }
 
-   @BeforeTest
+   @AfterSuite(alwaysRun = true)
+   public void tearDown() throws IOException {
+      //app.ftp().restore("config_inc.php.bak", "config_inc.php");
+      app.stop();
+   }
+
    public boolean isIssueOpen(int issueId) throws MalformedURLException, ServiceException, RemoteException {
 
       MantisConnectPortType mcp = new MantisConnectLocator().getMantisConnectPort(new URL(app.getProperty("web.mantisConnectUrl")));
@@ -45,11 +51,4 @@ public class TestBase {
          throw new SkipException("Ignored because of issue " + issueId);
       }
    }
-
-   @AfterSuite(alwaysRun = true)
-   public void tearDown() throws IOException {
-      //app.ftp().restore("config_inc.php.bak", "config_inc.php");
-      app.stop();
-   }
-
 }
